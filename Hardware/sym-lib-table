@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "Optical_Tracking_Odometry_Sensor-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/Optical_Tracking_Odometry_Sensor-eagle-import.kicad_sym")(options "")(descr ""))
+)
