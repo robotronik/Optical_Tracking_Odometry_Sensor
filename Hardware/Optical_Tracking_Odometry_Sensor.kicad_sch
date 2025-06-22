@@ -7209,7 +7209,7 @@
 		)
 		(uuid "42e63aaf-0e29-4652-9b85-86436a98037e")
 	)
-	(label "STM_IO9"
+	(label "DBG_TX"
 		(at 63.5 60.96 180)
 		(effects
 			(font
@@ -7289,7 +7289,7 @@
 		)
 		(uuid "7b148aca-2813-44b5-8e73-e0fce1c23510")
 	)
-	(label "STM_IO10"
+	(label "DBG_RX"
 		(at 63.5 63.5 180)
 		(effects
 			(font
@@ -7349,7 +7349,7 @@
 		)
 		(uuid "8ff94c35-b0fd-4079-9336-800729579879")
 	)
-	(label "STM_IO10"
+	(label "DBG_RX"
 		(at 236.22 81.28 0)
 		(effects
 			(font
@@ -7399,7 +7399,7 @@
 		)
 		(uuid "a235d832-aa4e-4caf-93ae-e6c46860da54")
 	)
-	(label "STM_IO9"
+	(label "DBG_TX"
 		(at 236.22 83.82 0)
 		(effects
 			(font
