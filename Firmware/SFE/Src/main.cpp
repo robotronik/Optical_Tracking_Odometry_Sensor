@@ -6,7 +6,7 @@
 
 #include "main.h"
 #include "otosLsm6dso.h"
-#include "otosPaa5160.h"
+#include "otosPaa5163.h"
 #include "registers.h"
 #include "otosConstants.h"
 #include "time.h"
@@ -29,7 +29,7 @@ void copyRegsFromSelfShadow();
 void copyRegsFromHostShadow();
 
 // Instances of the sensors
-PAA5160 paa;
+PAA5163 paa;
 LSM6DSO lsm;
 
 // Offset between OTOS and host, and its inverse
@@ -83,37 +83,43 @@ void setup(void)
     LL_I2C_EnableIT_NACK(I2C1);
     LL_I2C_EnableIT_STOP(I2C1);
 
-    // Calibrate and enable the ADC, which is used to check that the PAA5160 is
+    // Calibrate and enable the ADC, which is used to check that the PAA5163 is
     // actually receiving power
     calibrateAndEnableADC();
 
-    // Begin the PAA5160. This should be done before the LSM6DS0, because the
-    // ESD diodes on the PAA5160's SPI pins will back-power it, which we don't
-    // want. The begin() will power up the PAA5160, after which we can begin
+    // Begin the PAA5163. This should be done before the LSM6DS0, because the
+    // ESD diodes on the PAA5163's SPI pins will back-power it, which we don't
+    // want. The begin() will power up the PAA5163, after which we can begin
     // the LSM6DS0 safely
     err = paa.begin();
-    if(err != kSTkErrOk)
+    if(err != kSTkErrOk){
         registerStatus->errorPaa = 1;
+        registerStatus->errorPaa1 = 1;
+    }
 
     // Now we can begin the LSM6DS0
     err = lsm.begin();
     if(err != kSTkErrOk)
         registerStatus->errorLsm = 1;
 
-    // Ensure the orientation of the PAA5160 is correct, it defaults to one axis
+    // Ensure the orientation of the PAA5163 is correct, it defaults to one axis
     // being inverted
-    sfe_paa5160_orientation_t orientation;
+    sfe_paa5163_orientation_t orientation;
     orientation.invertX = 0;
     orientation.invertY = 0;
     orientation.swapXY = 0;
     err = paa.setOrientation(orientation);
-    if(err != kSTkErrOk)
+    if(err != kSTkErrOk){
         registerStatus->errorPaa = 1;
+        registerStatus->errorPaa2 = 1;
+    }
 
-    // Set PAA5160 resolution to max (20k dpi)
-    err = paa.setResolution(kPaa5160MaxResolution, kPaa5160MaxResolution);
-    if(err != kSTkErrOk)
+    // Set PAA5163 resolution to max (20k dpi)
+    err = paa.setResolution(kPaa5163MaxResolution, kPaa5163MaxResolution);
+    if(err != kSTkErrOk){
         registerStatus->errorPaa = 1;
+        registerStatus->errorPaa3 = 1;
+    }
 
     // Set range and data rate for accelerometer and gyro as high as we can, to
     // avoid clipping, and to see short data spikes. 16g and 2000dps is the max
@@ -133,7 +139,7 @@ void setup(void)
         registerStatus->errorLsm = 1;
 
     // Enable gyro data ready interrupt, which we will use to synchronize the
-    // data from the PAA5160 and LSM6DS0
+    // data from the PAA5163 and LSM6DS0
     err = lsm.setInterrupts(kLsm6dsoInt1Pin, kLsm6dsoInt1SrcDrdyG);
     if(err != kSTkErrOk)
         registerStatus->errorLsm = 1;
@@ -288,7 +294,7 @@ void sensorUpdate()
     int16_t accelXRaw = (lsmData[7] << 8) | lsmData[6];
     int16_t accelYRaw = (lsmData[9] << 8) | lsmData[8];
 
-    // Convert the PAA5160 data to meters
+    // Convert the PAA5163 data to meters
     float deltaX = deltaXRaw * paa.rawToMetersX();
     float deltaY = deltaYRaw * paa.rawToMetersY();
 
@@ -298,7 +304,7 @@ void sensorUpdate()
     float vH = (deltaHRaw * lsm.rawToRps() - gyrOffsetZ);
 
     // Convert the accelerometer data to m/s^2, and apply the acceleration
-    // offset. The IMU is mounted 90 degrees from the PAA5160, so we need to
+    // offset. The IMU is mounted 90 degrees from the PAA5163, so we need to
     // swap the X and Y axes, and negate Y    
     float accelXMps2 = (accelYRaw * lsm.rawToMps2()) - accOffsetY;
     float accelYMps2 = -((accelXRaw * lsm.rawToMps2()) - accOffsetX);
@@ -307,7 +313,7 @@ void sensorUpdate()
     // Lookup table calibration
     ////////////////////////////////////////////////////////////////////////////
 
-    // The resolution of the PAA5160 varies with the surface velocity. A lookup
+    // The resolution of the PAA5163 varies with the surface velocity. A lookup
     // table has been implemented that provides a scaling factor to compensate
     // based on the measured velocities, so compute the measured velocities
     float vx = deltaX * dtInv;
@@ -409,7 +415,7 @@ void sensorUpdate()
         xKf.updateAcc(accelXMps2, 9e-4 * registerSignalProcess->enVar);
         yKf.updateAcc(accelYMps2, 9e-4 * registerSignalProcess->enVar);
 
-        // Sometimes the velocity measured by the PAA5160 drops very low, which
+        // Sometimes the velocity measured by the PAA5163 drops very low, which
         // is usually caused by tracking issues (eg. debris or a sudden change
         // in surface properties). We can detect this if the measured velocity
         // is significantly lower than the estimated velocity, in which case we
@@ -531,7 +537,7 @@ void sensorUpdate()
     registerShadowSelf[kOtosRegAccStdHL] = ahStdInt & 0xFF;
     registerShadowSelf[kOtosRegAccStdHH] = (ahStdInt >> 8) & 0xFF;
 
-    // Also store the raw LSM6DSO and PAA5160 data into the shadow buffer
+    // Also store the raw LSM6DSO and PAA5163 data into the shadow buffer
     memcpy(registerShadowSelf + kOtosRegLsmGyrXL, lsmData, 12);
     memcpy(registerShadowSelf + kOtosRegPaaBurst00, paaData, 12);
 

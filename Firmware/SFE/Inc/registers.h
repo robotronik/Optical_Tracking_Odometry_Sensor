@@ -146,7 +146,10 @@ typedef union {
     {
         uint8_t warnTiltAngle : 1;
         uint8_t warnOpticalTracking : 1;
-        uint8_t reserved : 4;
+        uint8_t errorPaa1 : 1;
+        uint8_t errorPaa2 : 1;
+        uint8_t errorPaa3 : 1;
+        uint8_t errorPaa4 : 1;
         uint8_t errorPaa : 1;
         uint8_t errorLsm : 1;
     };

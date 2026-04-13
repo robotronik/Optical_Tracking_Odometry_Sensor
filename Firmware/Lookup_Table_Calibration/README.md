@@ -4,7 +4,7 @@ This folder contains the scripts and files that were used to create the lookup t
 
 ## Precursory Info
 
-The PAA5160 is the optical tracking sensor used on the board, and it was discovered in testing that there is resolution variation based on how fast the surface is moving. However the resolution variation is nonlinear, and the variation for one axis depends on the velocity in both axes. Below is a plot of the x-axis resolution variation (measured velocity divided by true velocity) versus the true velocity in both axes, where the color scale goes from 0.9 (purple) to 1.0 (yellow):
+The PAA5163 is the optical tracking sensor used on the board, and it was discovered in testing that there is resolution variation based on how fast the surface is moving. However the resolution variation is nonlinear, and the variation for one axis depends on the velocity in both axes. Below is a plot of the x-axis resolution variation (measured velocity divided by true velocity) versus the true velocity in both axes, where the color scale goes from 0.9 (purple) to 1.0 (yellow):
 
 ![img](Images/x_axis_variation_uncalibrated.png)
 
@@ -16,7 +16,7 @@ Rather than storing the variation, the inverse (referred to as the scalar lookup
 
 ![img](Images/x_axis_scaling.png)
 
-The firmware needs to store this lookup table up to +/- 100 in/s (2.5m/s), which is the max rated speed of the PAA5160. The lookup table in the image above has a resolution of 1 in/s, meaning 201 * 201 = 40,401 data points would need to be stored. The STM32C0 microcontroller on the board only has 32k of flash memory, so this needs to be stored more efficiently.
+The firmware needs to store this lookup table up to +/- 100 in/s (2.5m/s), which is the max rated speed of the PAA5163. The lookup table in the image above has a resolution of 1 in/s, meaning 201 * 201 = 40,401 data points would need to be stored. The STM32C0 microcontroller on the board only has 32k of flash memory, so this needs to be stored more efficiently.
 
 The main space savings here is to store a sparse version of this lookup tableT Firmware version v1.0 uses 51 * 51 = 2,601 data points; the 51 grid coordinate were chosen by hand to capture just the peaks and valleys. At every time step, the measured velocity is used to index into the lookup table, and a bilinear interpolation is used to approximate the correct scaling value. Below is an image of the sparse lookup table:
 
