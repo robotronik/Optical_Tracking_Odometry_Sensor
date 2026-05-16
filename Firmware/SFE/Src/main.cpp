@@ -56,8 +56,8 @@ uint32_t lastLoopTime = 0;
 sfeTkError_t err = 0;
 
 // Scaler correction values
-float userScalarLinear = 1.0f;
-float userScalarAngular = 1.0f;
+volatile float userScalarLinear = 1.0f;
+volatile float userScalarAngular = 1.0f;
 
 // Kalmam filters for x and y axes
 otosKalmanFilter xKf(1e-8, 1e-6, 1e-4);

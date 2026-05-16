@@ -181,9 +181,9 @@ extern uint8_t registerShadowHost[kNumRegisters];
 extern uint8_t registerShadowSelf[kNumRegisters];
 
 // Flags to know if the shadow registers have been written to
-extern bool registerShadowHostWritten[kNumRegisters];
-extern bool shadowHostWritten;
-extern bool shadowSelfWritten;
+extern volatile bool registerShadowHostWritten[kNumRegisters];
+extern volatile bool shadowHostWritten;
+extern volatile bool shadowSelfWritten;
 
 // Index of the register being accessed by the host
 extern volatile uint8_t registerIndex;

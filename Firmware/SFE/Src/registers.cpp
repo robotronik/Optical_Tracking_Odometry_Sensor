@@ -10,9 +10,9 @@
 uint8_t registerBufferMain[kNumRegisters];
 uint8_t registerShadowHost[kNumRegisters];
 uint8_t registerShadowSelf[kNumRegisters];
-bool registerShadowHostWritten[kNumRegisters];
-bool shadowHostWritten = false;
-bool shadowSelfWritten = false;
+volatile bool registerShadowHostWritten[kNumRegisters];
+volatile bool shadowHostWritten = false;
+volatile bool shadowSelfWritten = false;
 
 // Index of I2C register buffer
 volatile uint8_t registerIndex = 0;
@@ -36,7 +36,7 @@ void resetRegisters()
     memset(registerBufferMain, 0, kNumRegisters);
     memset(registerShadowHost, 0, kNumRegisters);
     memset(registerShadowSelf, 0, kNumRegisters);
-    memset(registerShadowHostWritten, 0, kNumRegisters);
+    memset((void*)registerShadowHostWritten, 0, kNumRegisters);
 
     // Set constant register values
     registerBufferMain[kOtosRegProdID] = kOtosProdID;
