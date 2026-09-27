@@ -336214,7 +336214,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "PAA5160E1-Q"
+	(symbol "PAA5163E1-Q"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -336238,7 +336238,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:PAA5160E1-Q"
+		(property "Footprint" "Optical_Tracking_Odometry_Sensor:PAA5163E1-Q"
 			(at 0 0 0)
 			(effects
 				(font
@@ -336273,7 +336273,7 @@
 				)
 			)
 		)
-		(symbol "PAA5160E1-Q_1_0"
+		(symbol "PAA5163E1-Q_1_0"
 			(polyline
 				(pts
 					(xy -12.7 12.7) (xy -12.7 -12.7)
