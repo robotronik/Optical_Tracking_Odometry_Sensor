@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -141,7 +147,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1778,
+        "min_clearance": 0.15,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.1016,
         "min_groove_width": 0.0,
@@ -204,7 +210,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -231,7 +239,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -498,7 +511,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1778,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -530,7 +543,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../Optical_Tracetry_Sensor.stl",
+      "step": "../Optical_Tracetry_Sensor.step",
       "svg": "",
       "vrml": ""
     },

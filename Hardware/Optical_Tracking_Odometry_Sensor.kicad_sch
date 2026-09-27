@@ -5,6 +5,189 @@
 	(uuid "fa72e3b7-ce7c-4b33-b42d-a02071176dc6")
 	(paper "User" 299.314 224.739)
 	(lib_symbols
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Optical_Tracking_Odometry_Sensor-eagle-import:0.1UF-0603-25V-(+80/-20%)"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2684,211 +2867,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Optical_Tracking_Odometry_Sensor-eagle-import:LED-RED_0603-KB"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at -3.429 -4.572 90)
-				(effects
-					(font
-						(size 1.778 1.778)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" ""
-				(at 1.905 -4.572 90)
-				(effects
-					(font
-						(size 1.778 1.778)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "Optical_Tracking_Odometry_Sensor:LED-0603"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Red SMD LED\n\nUsed in manufacturing of most products at SparkFun\n\nPackages:\n\n• 0603 - KB - KingBright (DIO-17976) SMD 0603 package https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf [Datasheet]\n• 0603 - (DIO-00819, has gone EOL) SMD 0603 package\n• 0603 SMART - SMD 0603 SMART package ( more efficient and expensive)http://www.osram-os.com/Graphics/XPic2/00077099_0.pdf [Product Link]\n•  1206 - SMD1206  package https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150OVS4.pdff [Product Link]\n\nSparkFun Products:\n\n• Pro Mini 328 -5V\n• RedBoard\n• IOIO-OTG"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED-RED_0603-KB_1_0"
-				(polyline
-					(pts
-						(xy -3.429 2.159) (xy -3.048 1.27) (xy -2.54 1.778)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.302 3.302) (xy -2.921 2.413) (xy -2.413 2.921)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy -3.429 -2.159)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -1.905) (xy -3.302 -3.302)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy -1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "A"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "C"
 						(effects
 							(font
 								(size 0 0)
@@ -6083,16 +6061,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 116.84) (xy 176.53 111.76)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "597b9b25-744f-4a54-985d-09b4e57ace0d")
-	)
-	(wire
-		(pts
 			(xy 256.54 35.56) (xy 256.54 38.1)
 		)
 		(stroke
@@ -6880,6 +6848,16 @@
 			(type solid)
 		)
 		(uuid "cffb69cd-1a55-44e4-afc1-55dc806fcf37")
+	)
+	(wire
+		(pts
+			(xy 176.53 111.76) (xy 176.53 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5f4606f-0d4c-47cd-a4b8-f7d5a9c24c7c")
 	)
 	(wire
 		(pts
@@ -7831,7 +7809,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 179.07 83.82 0)
 			(effects
 				(font
@@ -7966,7 +7944,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 166.37 119.38 0)
 			(effects
 				(font
@@ -8035,7 +8013,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 60.96 193.04 0)
 			(effects
 				(font
@@ -8434,7 +8412,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 153.67 83.82 0)
 			(effects
 				(font
@@ -8477,8 +8455,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Optical_Tracking_Odometry_Sensor-eagle-import:LED-RED_0603-KB")
-		(at 176.53 119.38 0)
+		(lib_id "Device:LED")
+		(at 176.53 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8486,7 +8464,7 @@
 		(dnp no)
 		(uuid "30caf6be-7861-4322-85f8-e60a1bfe7e84")
 		(property "Reference" "D1"
-			(at 173.101 123.952 90)
+			(at 174.498 122.428 0)
 			(effects
 				(font
 					(size 1.778 1.778)
@@ -8495,7 +8473,7 @@
 			)
 		)
 		(property "Value" "Blue"
-			(at 178.435 123.952 90)
+			(at 178.816 123.19 0)
 			(effects
 				(font
 					(size 1.778 1.778)
@@ -8503,8 +8481,8 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:LED-0603"
-			(at 176.53 119.38 0)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8512,8 +8490,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 176.53 119.38 0)
+		(property "Datasheet" "~"
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8521,8 +8499,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 176.53 119.38 0)
+		(property "Description" "Light emitting diode"
+			(at 176.53 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8530,10 +8508,19 @@
 				(hide yes)
 			)
 		)
-		(pin "C"
+		(property "Sim.Pins" "1=K 2=A"
+			(at 176.53 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
 			(uuid "22d7d459-a14d-4340-aa33-95caf4db8493")
 		)
-		(pin "A"
+		(pin "2"
 			(uuid "b8b2d4ed-8a0f-46da-b3ee-49c086497af2")
 		)
 		(instances
@@ -8639,7 +8626,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 256.54 45.72 0)
 			(effects
 				(font
@@ -8708,7 +8695,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 231.14 45.72 0)
 			(effects
 				(font
@@ -8777,7 +8764,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 195.58 45.72 0)
 			(effects
 				(font
@@ -8912,7 +8899,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 143.51 184.15 0)
 			(effects
 				(font
@@ -9049,7 +9036,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:SOT-416FL"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-416"
 			(at 238.76 40.64 0)
 			(effects
 				(font
@@ -9188,7 +9175,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 45.72 193.04 0)
 			(effects
 				(font
@@ -9431,7 +9418,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:LGA14L"
+		(property "Footprint" "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y"
 			(at 83.82 124.46 0)
 			(effects
 				(font
@@ -9602,7 +9589,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 158.75 184.15 0)
 			(effects
 				(font
@@ -9805,7 +9792,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 142.24 45.72 0)
 			(effects
 				(font
@@ -9852,7 +9839,7 @@
 		(at 241.3 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "5cb7fe38-d5d4-4120-8bc2-db324fe6d456")
@@ -10019,7 +10006,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:SOT-416FL"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-416"
 			(at 149.86 40.64 0)
 			(effects
 				(font
@@ -10091,7 +10078,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
 			(at 166.37 83.82 0)
 			(effects
 				(font
@@ -10560,7 +10547,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 43.18 73.66 0)
 			(effects
 				(font
@@ -10629,7 +10616,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:STM32C011F6U6"
+		(property "Footprint" "Package_DFN_QFN:ST_UFQFPN-20_3x3mm_P0.5mm"
 			(at 86.36 60.96 0)
 			(effects
 				(font
@@ -10863,7 +10850,7 @@
 		(at 156.21 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "863d4da3-b22f-4b1a-9583-1e5a96e3e97b")
@@ -11285,7 +11272,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:SOT23-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 180.34 43.18 0)
 			(effects
 				(font
@@ -11360,7 +11347,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 109.22 38.1 0)
 			(effects
 				(font
@@ -11496,7 +11483,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 27.94 73.66 0)
 			(effects
 				(font
@@ -11631,7 +11618,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 48.26 129.54 0)
 			(effects
 				(font
@@ -11766,7 +11753,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 38.1 193.04 0)
 			(effects
 				(font
@@ -11968,7 +11955,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 109.22 200.66 0)
 			(effects
 				(font
@@ -12037,7 +12024,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 30.48 193.04 0)
 			(effects
 				(font
@@ -12172,7 +12159,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 53.34 193.04 0)
 			(effects
 				(font
@@ -12418,7 +12405,7 @@
 		(at 151.13 176.53 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "d2686c9a-ce41-4f5d-bdcb-17d835a78758")
@@ -12954,7 +12941,7 @@
 		(at 226.06 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "dba43e90-6971-4931-a662-d7cd438e029d")
@@ -13125,7 +13112,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 35.56 73.66 0)
 			(effects
 				(font
@@ -13194,7 +13181,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 157.48 45.72 0)
 			(effects
 				(font
@@ -13263,7 +13250,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 50.8 71.12 0)
 			(effects
 				(font
@@ -13666,7 +13653,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:0603"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 35.56 129.54 0)
 			(effects
 				(font
