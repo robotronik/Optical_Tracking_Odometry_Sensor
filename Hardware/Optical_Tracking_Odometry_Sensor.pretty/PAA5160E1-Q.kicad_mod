@@ -1,4 +1,4 @@
-(footprint "PAA5160E1-Q"
+(footprint "PAA5163E1-Q"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "PAA5160E1-Q"
+	(property "Value" "PAA5163E1-Q"
 		(at 0 3.5 0)
 		(unlocked yes)
 		(layer "F.Fab")

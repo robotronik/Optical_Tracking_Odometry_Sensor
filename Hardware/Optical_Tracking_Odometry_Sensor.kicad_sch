@@ -3656,7 +3656,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Optical_Tracking_Odometry_Sensor-eagle-import:PAA5160E1-Q"
+		(symbol "Optical_Tracking_Odometry_Sensor-eagle-import:PAA5163E1-Q"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3680,7 +3680,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "Optical_Tracking_Odometry_Sensor:PAA5160E1-Q"
+			(property "Footprint" "Optical_Tracking_Odometry_Sensor:PAA5163E1-Q"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3715,7 +3715,7 @@
 					)
 				)
 			)
-			(symbol "PAA5160E1-Q_1_0"
+			(symbol "PAA5163E1-Q_1_0"
 				(polyline
 					(pts
 						(xy -12.7 12.7) (xy -12.7 -12.7)
@@ -5205,19 +5205,6 @@
 		)
 		(uuid "4937d764-8518-4628-ace5-bba2887f286c")
 	)
-	(text "LSM6DSV ?"
-		(exclude_from_sim no)
-		(at 98.044 105.41 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 1)
-				(bold yes)
-				(color 255 21 37 1)
-			)
-		)
-		(uuid "4c02cf04-0cb2-4182-83fc-5b5866e7f31a")
-	)
 	(text "6-DoF IMU - LSM6DSO"
 		(exclude_from_sim no)
 		(at 73.66 99.06 0)
@@ -5278,19 +5265,6 @@
 		)
 		(uuid "9bd47e47-dfad-4212-831a-67f5b599cafe")
 	)
-	(text "PAA5163E1 ?"
-		(exclude_from_sim no)
-		(at 97.028 161.798 0)
-		(effects
-			(font
-				(size 5 5)
-				(thickness 1)
-				(bold yes)
-				(color 255 21 37 1)
-			)
-		)
-		(uuid "9f8ceab3-db44-463c-8b32-936970d5254a")
-	)
 	(text "Cut PWR jumper to\nremove power LED"
 		(exclude_from_sim no)
 		(at 166.37 137.16 0)
@@ -5301,7 +5275,7 @@
 		)
 		(uuid "a02bcbca-9baf-4f4e-90ef-83077c20cd5c")
 	)
-	(text "PAA5160 Power Control and Regulator - RT9080"
+	(text "PAA5163 Power Control and Regulator - RT9080"
 		(exclude_from_sim no)
 		(at 167.64 22.86 0)
 		(effects
@@ -5391,7 +5365,7 @@
 		)
 		(uuid "f5d7b4f2-d832-43ba-be66-8ea546644b43")
 	)
-	(text "Optical Tracking Sensor - PAA5160E1-Q"
+	(text "Optical Tracking Sensor - PAA5163E1-QV22"
 		(exclude_from_sim no)
 		(at 73.406 151.384 0)
 		(effects
@@ -7755,7 +7729,7 @@
 			(uuid "f9968bb4-9c22-4d64-8a79-997c263da96d")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY1")
 					(unit 1)
@@ -7822,7 +7796,7 @@
 			(uuid "1463227b-6199-49ab-8d38-ab8b2edd27e9")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND7")
 					(unit 1)
@@ -7891,7 +7865,7 @@
 			(uuid "1b4cf198-63d9-494a-a784-8fcb7f412afb")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "D3")
 					(unit 1)
@@ -8026,7 +8000,7 @@
 			(uuid "786e4825-2066-4837-a5d9-fe3dd7e067a0")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "R1")
 					(unit 1)
@@ -8095,7 +8069,7 @@
 			(uuid "73526636-addc-4f4f-9ad8-4fa9fd5f889b")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C9")
 					(unit 1)
@@ -8161,7 +8135,7 @@
 			(uuid "fb36504d-67c3-496c-a247-17922c662207")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY25")
 					(unit 1)
@@ -8227,7 +8201,7 @@
 			(uuid "4f1ab73f-cbd5-49ea-8129-125ba01fbebb")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY2")
 					(unit 1)
@@ -8494,7 +8468,7 @@
 			(uuid "21365c99-af5e-4fa6-abb5-3c23f412fd6b")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "D4")
 					(unit 1)
@@ -8563,7 +8537,7 @@
 			(uuid "b8b2d4ed-8a0f-46da-b3ee-49c086497af2")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "D1")
 					(unit 1)
@@ -8630,7 +8604,7 @@
 			(uuid "6d08d6d2-3a4b-44d2-8c91-7d166f7980ec")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND11")
 					(unit 1)
@@ -8699,7 +8673,7 @@
 			(uuid "6a8d980f-df73-4a93-a523-50d85e0bd9b3")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C10")
 					(unit 1)
@@ -8768,7 +8742,7 @@
 			(uuid "a972136a-80be-4189-aab5-a36d346db4b0")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "R2")
 					(unit 1)
@@ -8837,7 +8811,7 @@
 			(uuid "11eebac6-6920-422e-b1f3-fdbcf938a9a1")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C6")
 					(unit 1)
@@ -8972,7 +8946,7 @@
 			(uuid "92de03fc-df93-4c46-9296-37b90af12b9f")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "R3")
 					(unit 1)
@@ -9039,7 +9013,7 @@
 			(uuid "e31410dc-7305-4e8c-9e5b-a48483c3769b")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND23")
 					(unit 1)
@@ -9112,7 +9086,7 @@
 			(uuid "90d162fc-2bb5-4ece-b731-01f06020ac4f")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "Q1")
 					(unit 1)
@@ -9179,7 +9153,7 @@
 			(uuid "094fcf45-1b7e-42eb-bde1-da956a1432ee")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND8")
 					(unit 1)
@@ -9248,7 +9222,7 @@
 			(uuid "8a6aa88f-7217-4e07-aefd-adfc1b2db509")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C7")
 					(unit 1)
@@ -9314,7 +9288,7 @@
 			(uuid "f4ca9602-344c-4776-9f75-cffd11e44a21")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#PWR01")
 					(unit 1)
@@ -9323,7 +9297,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Optical_Tracking_Odometry_Sensor-eagle-import:PAA5160E1-Q")
+		(lib_id "Optical_Tracking_Odometry_Sensor-eagle-import:PAA5163E1-Q")
 		(at 86.36 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9340,7 +9314,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "PAA5160E1-Q"
+		(property "Value" "PAA5163E1-Q"
 			(at 73.66 200.66 0)
 			(effects
 				(font
@@ -9349,7 +9323,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Optical_Tracking_Odometry_Sensor:PAA5160E1-Q"
+		(property "Footprint" "Optical_Tracking_Odometry_Sensor:PAA5163E1-Q"
 			(at 86.36 185.42 0)
 			(effects
 				(font
@@ -9422,7 +9396,7 @@
 			(uuid "ffbf17f7-4af9-4d4f-b54f-ae6bb6b3d13f")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "U1")
 					(unit 1)
@@ -9527,7 +9501,7 @@
 			(uuid "1d228360-5a62-44ef-88a0-d476280f0215")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "U2")
 					(unit 1)
@@ -9593,7 +9567,7 @@
 			(uuid "e92fd7b9-64c7-4009-89d6-b052e440bbff")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY4")
 					(unit 1)
@@ -9662,7 +9636,7 @@
 			(uuid "7976ed9e-1ea5-4c5a-9e7f-2821bc8d3a6f")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "R4")
 					(unit 1)
@@ -9729,7 +9703,7 @@
 			(uuid "2dd64cf3-924e-46ad-a1d1-3537fa233a50")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND9")
 					(unit 1)
@@ -9796,7 +9770,7 @@
 			(uuid "d4448230-7748-4c87-bb94-364b867ad581")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND16")
 					(unit 1)
@@ -9865,7 +9839,7 @@
 			(uuid "89d363c1-de3f-40af-bacb-4d8c81abca81")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "R5")
 					(unit 1)
@@ -9943,7 +9917,7 @@
 			(uuid "dc13b7d4-ca87-4a7b-8750-e105dc59e3d8")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "U$1")
 					(unit 1)
@@ -10082,7 +10056,7 @@
 			(uuid "70a793b3-a8f6-48dd-93c5-2c3b6b51449a")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "Q2")
 					(unit 1)
@@ -10151,7 +10125,7 @@
 			(uuid "42531009-5eb7-4cb7-969c-d90918d44129")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "D2")
 					(unit 1)
@@ -10218,7 +10192,7 @@
 			(uuid "4a20a4e0-a39c-4c0c-b9e2-e3e7decd604a")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND2")
 					(unit 1)
@@ -10285,7 +10259,7 @@
 			(uuid "6197c2b0-7f61-4aa4-8c50-eff7233e9798")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND24")
 					(unit 1)
@@ -10419,7 +10393,7 @@
 			(uuid "e59bd31e-bad3-46dc-a879-98a69bde5e6a")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND13")
 					(unit 1)
@@ -10620,7 +10594,7 @@
 			(uuid "2831fb41-8813-4ec2-84d0-186f49b4e313")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C14")
 					(unit 1)
@@ -10743,7 +10717,7 @@
 			(uuid "0ea5c96d-e48c-4bac-8680-1752889d78ea")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "U3")
 					(unit 1)
@@ -10876,7 +10850,7 @@
 			(uuid "bb8cdc7e-5f98-4ac5-93fa-104774d8d272")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND25")
 					(unit 1)
@@ -10944,7 +10918,7 @@
 			(uuid "aa1dd08f-f143-4830-9419-89f3bbd542f8")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "PWR0")
 					(unit 1)
@@ -11077,7 +11051,7 @@
 			(uuid "7c5541d5-da5d-41aa-b9d1-878474ec865a")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND4")
 					(unit 1)
@@ -11143,7 +11117,7 @@
 			(uuid "32b74c2b-288f-460e-afe2-ea3124edc84d")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY24")
 					(unit 1)
@@ -11209,7 +11183,7 @@
 			(uuid "842315a5-7d67-4c0c-92f0-d73ab6c68684")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY22")
 					(unit 1)
@@ -11276,7 +11250,7 @@
 			(uuid "d301a2e9-0057-40f9-972a-f17776621fee")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND20")
 					(unit 1)
@@ -11351,7 +11325,7 @@
 			(uuid "32eb0393-bd51-4083-95bf-153813180818")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "U4")
 					(unit 1)
@@ -11420,7 +11394,7 @@
 			(uuid "95f2fc19-6644-469b-98ea-e73b5c3ba39a")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "R6")
 					(unit 1)
@@ -11487,7 +11461,7 @@
 			(uuid "f57ff31b-ceff-4e5f-9780-654e4c82f5f3")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND18")
 					(unit 1)
@@ -11556,7 +11530,7 @@
 			(uuid "541823f3-1b8f-4589-b169-983d4c79f16e")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C5")
 					(unit 1)
@@ -11622,7 +11596,7 @@
 			(uuid "d12f6680-1d8f-4d20-9341-4691bc79ffa9")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY23")
 					(unit 1)
@@ -11691,7 +11665,7 @@
 			(uuid "fde675ba-c5b6-477d-88c0-bde5caee9132")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C3")
 					(unit 1)
@@ -11826,7 +11800,7 @@
 			(uuid "61e48a23-9aab-4455-b1e1-c7d11d61ff75")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C8")
 					(unit 1)
@@ -11892,7 +11866,7 @@
 			(uuid "2f752869-edd4-49a2-b4f6-cfb155e0e21a")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY21")
 					(unit 1)
@@ -11959,7 +11933,7 @@
 			(uuid "274af1b4-e97a-4302-be0f-d87a50254278")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND1")
 					(unit 1)
@@ -12028,7 +12002,7 @@
 			(uuid "638e4b76-03ba-46eb-a8b1-34493ba77a0d")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C1")
 					(unit 1)
@@ -12097,7 +12071,7 @@
 			(uuid "49668cf8-a75e-41af-ab2f-3c6cf0078a87")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C4")
 					(unit 1)
@@ -12163,7 +12137,7 @@
 			(uuid "b41511a0-2d38-45b6-ad9d-62e1d9b2a965")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY20")
 					(unit 1)
@@ -12232,7 +12206,7 @@
 			(uuid "e6e8ff39-a56b-419a-9ff3-c95304086570")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C11")
 					(unit 1)
@@ -12431,7 +12405,7 @@
 			(uuid "38d3cf51-2573-427a-b999-bb772fa28796")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND26")
 					(unit 1)
@@ -12502,7 +12476,7 @@
 			(uuid "1019cc71-c42c-4c0a-8769-027836edcb59")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "I2C0")
 					(unit 1)
@@ -12767,7 +12741,7 @@
 			(uuid "f782a596-2c3d-4061-89ff-09f91983e9db")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND19")
 					(unit 1)
@@ -12834,7 +12808,7 @@
 			(uuid "2151bd6a-ed0f-4086-842b-f23661b084d1")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND12")
 					(unit 1)
@@ -12967,7 +12941,7 @@
 			(uuid "0b9100c8-542c-487e-bff3-9e343bf986d0")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND3")
 					(unit 1)
@@ -13049,7 +13023,7 @@
 			(uuid "276022a1-22e6-42c4-9a3a-f8d29d890eae")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "J3")
 					(unit 1)
@@ -13116,7 +13090,7 @@
 			(uuid "5631bd91-9ba5-45bd-95e1-520b506ae7d9")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND22")
 					(unit 1)
@@ -13185,7 +13159,7 @@
 			(uuid "c80ef441-243e-460d-a3f7-9b184fbeb79b")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C2")
 					(unit 1)
@@ -13254,7 +13228,7 @@
 			(uuid "b2c12f85-b43a-4990-9a4c-bcd58be1dad0")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C12")
 					(unit 1)
@@ -13323,7 +13297,7 @@
 			(uuid "5864e411-de67-4793-99c3-75079d0e76da")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "R7")
 					(unit 1)
@@ -13390,7 +13364,7 @@
 			(uuid "1144a1f2-741f-490f-a02a-62f397ef69c4")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND17")
 					(unit 1)
@@ -13456,7 +13430,7 @@
 			(uuid "ee355999-9bb5-47ac-b6db-800d419af347")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#SUPPLY16")
 					(unit 1)
@@ -13523,7 +13497,7 @@
 			(uuid "5f4f752b-14d0-45d5-afad-6d0843dcd6cd")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND15")
 					(unit 1)
@@ -13590,7 +13564,7 @@
 			(uuid "8abb4ecc-0416-44c7-a651-a09a41010d0a")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND21")
 					(unit 1)
@@ -13657,7 +13631,7 @@
 			(uuid "1acbd1e8-1a01-4f69-9b8e-ef8ff4bc7c33")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND10")
 					(unit 1)
@@ -13726,7 +13700,7 @@
 			(uuid "66f39b7c-6b3c-4848-a018-ea8bf4b01bb5")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "C13")
 					(unit 1)
@@ -13793,7 +13767,7 @@
 			(uuid "f14b204c-a8e0-47fa-bc39-b38955d89c3f")
 		)
 		(instances
-			(project ""
+			(project "Optical_Tracking_Odometry_Sensor"
 				(path "/fa72e3b7-ce7c-4b33-b42d-a02071176dc6"
 					(reference "#GND14")
 					(unit 1)
